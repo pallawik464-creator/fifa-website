@@ -5,6 +5,10 @@ const teams = [
   { name: "Spain", code: "es", group: "Group A" },
   { name: "South Korea", code: "kr", group: "Group B" },
   { name: "Argentina", code: "ar", group: "Group B" },
+  { name: "France", code: "fr", group: "Group C" },
+  { name: "England", code: "gb-eng", group: "Group C" },
+  { name: "Portugal", code: "pt", group: "Group D" },
+  { name: "Germany", code: "de", group: "Group D" },
 ];
 
 // Current FIFA world ranking order (men's, as of the June 2026 update)
