@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA Hub — Your Source for FIFA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="logo">FIFA <span>Hub</span></a>
+      <nav class="nav">
+        <a href="#teams">Teams</a>
+        <a href="#rankings">Rankings</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Welcome to FIFA Hub</p>
+      <h1 class="hero__title">Your Go-To Source<br>for FIFA</h1>
+      <p class="hero__subtitle">Teams, rankings, and everything happening in the world of football.</p>
+      <a href="#teams" class="btn btn--primary">View Teams</a>
+    </div>
+  </section>
+
+  <!-- ============ TEAM CARDS ============ -->
+  <section class="teams" id="teams">
+    <div class="section-heading">
+      <h2>Teams to Watch</h2>
+      <input type="text" id="teamSearch" class="search-input" placeholder="Search a team...">
+    </div>
+    <div class="team-grid" id="teamGrid">
+      <!-- Cards are injected here by script.js -->
+    </div>
+  </section>
+
+  <!-- ============ RANKINGS ============ -->
+  <section class="rankings" id="rankings">
+    <div class="section-heading">
+      <h2>FIFA World Rankings</h2>
+      <p class="section-note">Current men's world ranking standings</p>
+    </div>
+    <ol class="rankings-list" id="rankingsList">
+      <!-- Rows are injected here by script.js -->
+    </ol>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <h2>About This Project</h2>
+      <p>FIFA Hub is a fan-built website tracking top international teams and the latest FIFA world rankings. Built by Pallawi Kumari as a web development project.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>&copy; 2026 FIFA Hub. Built by Pallawi Kumari.</p>
+    <div class="footer__links">
+      <a href="#" target="_blank">GitHub</a>
+      <a href="#" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
