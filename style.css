@@ -78,7 +78,9 @@ a {
 
 /* ============ HERO ============ */
 .hero {
-  background: linear-gradient(160deg, var(--pitch-dark) 0%, var(--pitch-green) 100%);
+  background:
+    linear-gradient(160deg, rgba(27,67,50,0.92) 0%, rgba(45,106,79,0.88) 100%),
+    url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1600&q=80') center/cover;
   color: var(--chalk);
   padding: 6rem 1.5rem;
   text-align: center;
@@ -193,7 +195,8 @@ a {
 }
 
 .team-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .team-card__flag {
@@ -332,4 +335,198 @@ a {
   * {
     transition: none !important;
   }
+}
+.team-card__status {
+  display: block;
+  margin-top: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.status--eliminated {
+  color: #f87171;
+}
+
+.status--quarterfinals {
+  color: #4ade80;
+}
+
+.status--playing-today {
+  color: var(--trophy-gold);
+}
+/* ============ HEADLINES ============ */
+.headlines {
+  padding: 4rem 0 2rem;
+}
+
+.headlines-list {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  list-style: none;
+}
+
+.headlines-list li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.headlines-list li::before {
+  content: "⚽";
+  position: absolute;
+  left: 0;
+  font-size: 0.8rem;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero__next-match {
+  margin-top: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: rgba(241, 250, 238, 0.75);
+}
+/* ============ SCHEDULE ============ */
+.schedule {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.fixture-list {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  list-style: none;
+}
+
+.fixture-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.fixture-row__stage {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--pitch-green);
+  background: rgba(45, 106, 79, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
+
+.fixture-row__match {
+  font-weight: 600;
+  flex: 1;
+}
+
+.fixture-row__date {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+/* ============ VIDEO HIGHLIGHTS ============ */
+.highlights {
+  padding: 5rem 0;
+}
+
+.video-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+/* ============ FAN POLL ============ */
+.poll {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.poll-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.poll-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.poll-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--pitch-green);
+  background: #fff;
+  color: var(--pitch-green);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.poll-btn:hover {
+  background: var(--pitch-green);
+  color: #fff;
+}
+
+.poll-result {
+  margin-bottom: 0.9rem;
+}
+
+.poll-result__label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.poll-result__bar {
+  height: 10px;
+  background: #eee;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.poll-result__fill {
+  height: 100%;
+  background: var(--scoreboard-red);
+  transition: width 0.4s ease;
 }

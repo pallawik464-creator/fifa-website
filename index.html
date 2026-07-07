@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FIFA Hub — Your Source for FIFA</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -29,7 +30,23 @@
       <h1 class="hero__title">Your Go-To Source<br>for FIFA</h1>
       <p class="hero__subtitle">Teams, rankings, and everything happening in the world of football.</p>
       <a href="#teams" class="btn btn--primary">View Teams</a>
+      <p class="hero__next-match">⚽ Next Up: Argentina vs Egypt — Round of 16</p>
     </div>
+  </section>
+
+  <!-- ============ WORLD CUP HEADLINES ============ -->
+  <section class="headlines">
+    <div class="section-heading">
+      <h2>Latest World Cup Headlines</h2>
+      <p class="section-note">Round of 16 — updated July 7, 2026</p>
+    </div>
+    <ul class="headlines-list">
+      <li>Belgium routs co-host USA 4-1 to reach the quarterfinals</li>
+      <li>Spain edges Portugal 1-0 in an Iberian derby showdown</li>
+      <li>Norway's Haaland strikes down Brazil, reaching the quarterfinals</li>
+      <li>Germany and Netherlands stunned by Paraguay and Morocco</li>
+      <li>Argentina face Egypt today for a place in the quarterfinals</li>
+    </ul>
   </section>
 
   <!-- ============ TEAM CARDS ============ -->
@@ -52,6 +69,66 @@
     <ol class="rankings-list" id="rankingsList">
       <!-- Rows are injected here by script.js -->
     </ol>
+  </section>
+
+  <!-- ============ MATCH SCHEDULE ============ -->
+  <section class="schedule">
+    <div class="section-heading">
+      <h2>Upcoming Matches</h2>
+      <p class="section-note">Round of 16 & Quarterfinals</p>
+    </div>
+    <ul class="fixture-list">
+      <li class="fixture-row">
+        <span class="fixture-row__stage">Round of 16</span>
+        <span class="fixture-row__match">Argentina vs Egypt</span>
+        <span class="fixture-row__date">Jul 7</span>
+      </li>
+      <li class="fixture-row">
+        <span class="fixture-row__stage">Round of 16</span>
+        <span class="fixture-row__match">Switzerland vs Colombia</span>
+        <span class="fixture-row__date">Jul 7</span>
+      </li>
+      <li class="fixture-row">
+        <span class="fixture-row__stage">Quarterfinal</span>
+        <span class="fixture-row__match">Norway vs TBD</span>
+        <span class="fixture-row__date">Jul 11</span>
+      </li>
+      <li class="fixture-row">
+        <span class="fixture-row__stage">Quarterfinal</span>
+        <span class="fixture-row__match">France vs TBD</span>
+        <span class="fixture-row__date">Jul 11</span>
+      </li>
+    </ul>
+  </section>
+
+<!-- ============ VIDEO HIGHLIGHTS ============ -->
+  <section class="highlights">
+    <div class="section-heading">
+      <h2>Video Highlights</h2>
+      <p class="section-note">Best moments from the tournament so far</p>
+    </div>
+    <div class="video-grid">
+      <div class="video-embed">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZYqi6yen0VU?si=dvs1051HELoY7Oxo" title="Portugal vs Spain Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-embed">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/8BVYw1KYzB0?si=GWTdfTXu7kaZuDnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-embed">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/3dlpNrbzEWM?si=wz3tpapZ0jENZ8ct" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+<!-- ============ FAN POLL ============ -->
+  <section class="poll">
+    <div class="section-heading">
+      <h2>Fan Poll</h2>
+      <p class="section-note">Vote for your favorite team</p>
+    </div>
+    <div class="poll-box" id="pollBox">
+      <!-- Buttons and results are injected here by script.js -->
+    </div>
   </section>
 
   <!-- ============ ABOUT ============ -->
