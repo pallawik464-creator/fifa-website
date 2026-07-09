@@ -4,7 +4,7 @@ const teams = [
   { name: "Brazil", code: "br", group: "Group A", status: "Eliminated" },
   { name: "Spain", code: "es", group: "Group A", status: "Quarterfinals" },
   { name: "South Korea", code: "kr", group: "Group B", status: "Eliminated" },
-  { name: "Argentina", code: "ar", group: "Group B", status: "Playing Today" },
+  { name: "Argentina", code: "ar", group: "Group B", status: "Quarterfinals" },
   { name: "France", code: "fr", group: "Group C", status: "Quarterfinals" },
   { name: "England", code: "gb-eng", group: "Group C", status: "Quarterfinals" },
   { name: "Portugal", code: "pt", group: "Group D", status: "Eliminated" },
