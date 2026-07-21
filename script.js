@@ -2,11 +2,11 @@
 // Same teams you already set up in the Wix version
 const teams = [
   { name: "Brazil", code: "br", group: "Group A", status: "Eliminated" },
-  { name: "Spain", code: "es", group: "Group A", status: "Quarterfinals" },
+  { name: "Spain", code: "es", group: "Group A", status: "🏆 Champions" },
   { name: "South Korea", code: "kr", group: "Group B", status: "Eliminated" },
-  { name: "Argentina", code: "ar", group: "Group B", status: "Quarterfinals" },
-  { name: "France", code: "fr", group: "Group C", status: "Quarterfinals" },
-  { name: "England", code: "gb-eng", group: "Group C", status: "Quarterfinals" },
+  { name: "Argentina", code: "ar", group: "Group B", status: "Runner-up" },
+  { name: "France", code: "fr", group: "Group C", status: "4th Place" },
+  { name: "England", code: "gb-eng", group: "Group C", status: "3rd Place" },
   { name: "Portugal", code: "pt", group: "Group D", status: "Eliminated" },
   { name: "Germany", code: "de", group: "Group D", status: "Eliminated" },
 ];
